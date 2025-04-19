@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help & Support</title>
+    <style>
+      :root {
+        --primary-color: #2563eb;
+        --secondary-color: #1e40af;
+        --text-color: #1f2937;
+        --light-gray: #f3f4f6;
+        --border-color: #e5e7eb;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+
+      .search-box {
+        width: 100%;
+        max-width: 600px;
+        padding: 1rem;
+        border: 2px solid var(--border-color);
+        border-radius: 8px;
+        font-size: 1rem;
+        margin: 0 auto 2rem;
+        display: block;
+      }
+
+      .faq-section {
+        margin-bottom: 2rem;
+      }
+
+      .faq-item {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 1rem;
+        background: var(--light-gray);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-answer {
+        padding: 1rem;
+        display: none;
+      }
+
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+
+      .contact-section {
+        background: var(--light-gray);
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      .contact-methods {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .contact-method {
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-method h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Help & Support</h1>
+        <p>
+          Find answers to common questions or get in touch with our support team
+        </p>
+      </div>
+
+      <input type="text" class="search-box" placeholder="Search for help..." />
+
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is ASAP and what does it do?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              ASAP is a food & groceries delivery platform that connects you
+              with local restaurants and stores. We make it easy to order your
+              favorite meals and essential items, delivering them right to your
+              doorstep quickly and reliably. With our wide network of partners
+              and efficient delivery system, you can get what you need, when you
+              need it.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I get started with ASAP?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              To get started, simply download the ASAP app and create an account
+              using your email address. Once registered, you can browse nearby
+              restaurants and stores, place orders, and track your deliveries in
+              real-time through our user-friendly interface.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I access ASAP on mobile devices?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, ASAP is available as a mobile app for both iOS and Android
+              devices. You can download our app from the App Store or Google
+              Play Store to enjoy the full ASAP experience, including real-time
+              order tracking and push notifications for delivery updates.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I have my Restaurant or Store added to ASAP?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              If you'd like to have your restaurant or store added to ASAP, you
+              can sign up as a business partner by submitting your details on
+              the ASAP website. Our team will review your application and get
+              back to you with next steps.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I forget my password?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              You can reset your password by clicking the "Forgot Password" link
+              on the login page. You'll receive an email with instructions to
+              create a new password.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <h2>Contact Support</h2>
+        <p>
+          Can't find what you're looking for? Our support team is here to help.
+        </p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3>Email Support</h3>
+            <p>support@asap.ng</p>
+            <a href="mailto:support@asap.ng" class="button">Send Email</a>
+          </div>
+          <div class="contact-method">
+            <h3>Live Chat</h3>
+            <p>Available 24/7</p>
+            <a href="#" class="button">Start Chat</a>
+          </div>
+          <div class="contact-method">
+            <h3>Phone Support</h3>
+            <p>+234 803 5830 617</p>
+            <a href="tel:+2348035830617" class="button">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+          question.addEventListener("click", () => {
+            item.classList.toggle("active");
+          });
+        });
+
+        const searchBox = document.querySelector(".search-box");
+        searchBox.addEventListener("input", function (e) {
+          const searchTerm = e.target.value.toLowerCase();
+          const faqItems = document.querySelectorAll(".faq-item");
+
+          faqItems.forEach((item) => {
+            const question = item
+              .querySelector(".faq-question span:first-child")
+              .textContent.toLowerCase();
+            const answer = item
+              .querySelector(".faq-answer")
+              .textContent.toLowerCase();
+
+            if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
